@@ -26,9 +26,11 @@ int get_line(char s[], int lim)
 	int c, i;
 	int count;
 	count = 0;
-	for (i = 0; (c = getchar()) != EOF && c != '\n'; ++i) {
+	for (i = 0; (c = getchar()) != EOF && c != '\n'; ++i)
+	{
 		++count;
-		if (i < lim - 1) {
+		if (i < lim - 1)
+		{
 			s[i] = c;
 		}
 	}
